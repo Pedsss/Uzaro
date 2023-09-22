@@ -19,7 +19,6 @@
 
 body {
     min-height: 100%;
-    width: 100v    w;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
@@ -92,6 +91,10 @@ p, span{
 
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
 
     background-color: #d4d4d4;
@@ -108,9 +111,8 @@ header{
     height: 100px;
     width: 100%;
     top: 0;
-
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     position: sticky;
@@ -130,8 +132,8 @@ header{
 }
 
 #logo{
-    height: 50px;
-    min-width: 190px;
+    height: 80px;
+    min-width: 220px;
 }
 
 nav{
@@ -141,7 +143,7 @@ nav{
     align-items: center;
     padding: 0 3% 0 0;
     height: 100%;
-    width: 80%;
+    width: 100%;
     text-align: center;
 
 }
@@ -193,7 +195,7 @@ nav a:hover:after{
 
     display: flex;
     padding: 2rem 9rem 4rem;
-    max-height: 90rem;
+    height: auto;
     width: 100%;
     background: #ffffff url('../images/blurred.jpg') no-repeat center;
     
@@ -316,7 +318,7 @@ ul li{
     font-family: "HindBold";
     font-size: 2.3rem;
     color: #f1f1f1;
-    width: 100%;
+    width: 100%;    
 }
 
 #companyImg{
@@ -327,17 +329,18 @@ ul li{
 }
 
 #companyImg > #companyplaceholderImg{
-    min-height: 450px;
-    min-width: 400px;
+    height: 480px;
+    width: 400px;
     background-color: white;
 }
 
 #sectionContainer2{
 
-    height: 670px;
+    min-height: 60rem;
+    max-height: auto;
     padding: 4rem 6rem 0;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #f5f5f5;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
@@ -406,69 +409,6 @@ ul li{
 
 
 #sectionContainer3{
-    height: 850px;
-    width: 100%;
-    padding: 0;
-    background-color: #f1f1f1;
-    color: black;
-
-}
-
-#section-3{
-    display: grid;
-    grid-template-columns:auto auto auto auto;
-    grid-template-rows: 190px auto auto;
-    height: 100%;
-    width: 100%;
-}
-
-#section-3 #sectionTitle{
-    padding-top: 1.5rem;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    grid-column: 1 / 5;
-}
-
-
-#sectionTitle h1{
-    font-size: 4rem;
-    color: var(--darkblue);
-}
-
-#sectionTitle h2{
-    font-size: 3rem;
-    color: rgb(58, 57, 57);
-}
-
-#section-3 #item1,
-#section-3 #item2,
-#section-3 #item3,
-#section-3 #item4,
-#section-3 #item5,
-#section-3 #item6,
-#section-3 #item7,
-#section-3 #item8{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    color: var(--blue);
-}
-
-
-#placeholderImg{
-    height: 220px;
-    width: 220px;
-    border-radius: 110px;
-    background-color: var(--darkblue);
-}
-
-
-#sectionContainer4{
 
     height: 800px;
     width: 100%;
@@ -481,7 +421,7 @@ ul li{
 
 }
 
-#sectionContainer4 h2{
+#sectionContainer3 h2{
     font-size: 3.5rem;
     text-align: center;
     width: 100%;
@@ -507,14 +447,14 @@ form{
 
 
 
-#sectionContainer4 h3{
+#sectionContainer3 h3{
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--blue);
 }
 
-#sectionContainer4  #required{
+#sectionContainer3  #required{
     font-weight: 400;
     font-size: 1.4rem;
     color: #747373;
@@ -558,6 +498,16 @@ textarea{
     cursor: pointer;
     background-color: #0b5586;
     transition: 0.3s ease;
+}
+
+#chatbot{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #0F77BE;
 }
 
 footer{
@@ -675,8 +625,13 @@ footer a:hover{
         font-size: 1rem;
     }
 
+    #logo{
+        height: 60px;
+        min-width: 160px;
+    }
+
     #logocontainer{
-        margin: 2rem 3rem 2rem;
+        margin: 1rem 2rem 0;
     }
 
     #logocontainer > img{
@@ -684,7 +639,7 @@ footer a:hover{
     }
 
     header{
-        height: 85px;
+        height: 90px;
         display: flex;
         justify-content: left;
         align-items: flex-start;
@@ -695,7 +650,8 @@ footer a:hover{
         height: 400px;
         width: 0;
         padding: 10rem 2rem 5rem;
-        position: absolute;
+        position: fixed;
+        float:right;
         top: 0;
         right: -100%;
         flex-direction: column;
@@ -803,17 +759,20 @@ footer a:hover{
     
     #companyImg{
         height: 100%;
-        width: 100%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     #companyImg > #companyplaceholderImg{
-        height: 430px;
-        width: 400px;
-        background-color: white;
+        height: 400px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
 
     #sectionContainer2{
         min-height: 200rem;
@@ -858,7 +817,7 @@ footer a:hover{
     }
 
     #sectionContainer3{
-        height: 1500px;
+        height: auto;
         width: 100%;
     
     }
@@ -867,7 +826,7 @@ footer a:hover{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: 150px auto auto auto auto;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
@@ -887,10 +846,9 @@ footer a:hover{
         background-color: var(--darkblue);
     }
 
-    #section-3 h2{
-        font-size: 2rem;
+    #sectionContainer3 h2{
+        margin-bottom: 3rem;
     }
-
 
     footer{
         display: flex;
@@ -924,6 +882,10 @@ footer a:hover{
 /* Tablet View */
 
 @media screen and (min-width: 768px) and (max-width: 1100px){
+
+    #logocontainer{
+        margin-left: 2rem;
+    }
     
     #companyIntro{
         height: 820px;
