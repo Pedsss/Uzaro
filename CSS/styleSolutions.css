@@ -542,39 +542,6 @@ nav a:hover:after{
 
 #section11{
     height: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    
-}
-
-#section11 > #item1{
-    height: auto;
-    width: 50%;
-    padding: 2rem;
-    
-}
-
-#section11 > #item2{
-    height: auto;
-    width: 50%;
-    padding: 2rem;
-}
-
-#section11 #item1 > div{
-    padding: 4rem;
-    width: 100%;
-}
-
-#section11 #item1 > h2{
-    margin: 4rem 0 4rem;
-}
-
-
-#section12{
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -582,13 +549,13 @@ nav a:hover:after{
     align-items: center;
 }
 
-#section12 > h2{
+#section11 > h2{
     text-align: center;
     margin: 5rem 0 5rem;
     width: 80%;
 }
 
-#section12 h3{
+#section11 h3{
     height: 30px;
     width: 100%;
     margin-bottom: 4rem;
@@ -596,7 +563,7 @@ nav a:hover:after{
     text-align: center;
 }
 
-#section12 > .items{
+#section11 > .items{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -609,7 +576,7 @@ nav a:hover:after{
     margin: 2rem 0 2rem;
 }
 
-#section12 .items > #imgContainer{
+#section11 .items > #imgContainer{
     height: 100%;
     width: 50%;
     display: flex;
@@ -617,7 +584,7 @@ nav a:hover:after{
     align-items: center;
 }
 
-#section12 .items > #textContainer{
+#section11 .items > #textContainer{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -631,7 +598,7 @@ nav a:hover:after{
     max-width: 100%;
 }
 
-#section13{
+#section12{
     height: auto;
     width: 100%;
     display: flex;
@@ -640,7 +607,7 @@ nav a:hover:after{
     align-items: center;
 }
 
-#section13 .items{
+#section12 .items{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -653,13 +620,13 @@ nav a:hover:after{
     margin: 2rem 0 2rem;
 }
 
-#section13 > #textContainer{
+#section12 > #textContainer{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-#section13 #textContainer > div{
+#section12 #textContainer > div{
     height: auto;
     width: 50%;
 }
@@ -945,16 +912,12 @@ footer a:hover{
     }
     
     #section11 #item1,
-    #section11 #item2{
+    #section11 #item2,
+    #section11 #item3{
         width: 100%;
     }
     
-
-    #section11 #item1 > h2, #section11 #item2 > h2, #section12 .items > h3{
-        font-size: 2.4rem;
-    }
-
-    #section11 #item1 > h3{
+    #section11 .items > h3{
         font-size: 2rem;
     }
 
@@ -966,51 +929,25 @@ footer a:hover{
         width: 100%;
     }
 
-    #section12 > .items{
+    #section11 > .items{
+        display: flex;
+        flex-direction: column;
         height: auto;
-        width: 95%;
+        width: 100%;
         padding: 0;
     }
 
     
-    #section12 .items > #imgContainer{
+    #section11 .items > #imgContainer{
         height: 100%;
-        width: 50%;
+        width: 100%;
     }
     
-    #section12 .items > #textContainer{
+    #section11 .items > #textContainer{
         height: 100%;
-        width: 100%;
+        width: 90%;
     }
 
-    #section12 #item4, #section12 #item5{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #section12 #item4 > div, #section12 #item5 > div{
-        margin: 4rem 0 4rem;
-    }
-
-    #section12 #item6 #textContainer > p{
-        font-size: 2rem;
-    }
-
-    #section13 > #textContainer{
-        flex-direction: column;
-    }
-
-    #section13 #textContainer > div{
-        width: 100%;
-    }
-
-    #section13 #textContainer h3{
-        font-size: 2rem;
-    }
-
-    #section13 #textContainer  p{
-        font-size: 2rem;
-    }
 
     footer{
         display: flex;
