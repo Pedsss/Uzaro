@@ -980,24 +980,12 @@ footer a:hover{
     }
 
     #sectionContainer3{
-        height: 1500px;
+        height: auto;
         width: 100%;
     }
 
-    #section-3{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 200px auto auto auto auto;
-        height: 100%;
-        width: 100%;
-    }
-
-    #section-3 #sectionTitle{
-        padding-top: 1.5rem;
-        height: 100%;
-        text-align: center;
-        color: var(--darkblue);
-        grid-column: 1 / 3;
+    #sectionContainer3 > h2{
+        margin: 2rem 0 2rem;
     }
 
     footer{

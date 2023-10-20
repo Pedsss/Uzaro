@@ -287,6 +287,7 @@ nav a:hover:after{
 
 #sectionTitle h1{
     color: #f0f0f0;
+    font-size: 5rem;
 }
 
 #section3{
@@ -336,7 +337,7 @@ nav a:hover:after{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows:auto auto auto;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     margin: 2rem auto;
     height: auto;
     width: 90%;
@@ -345,8 +346,8 @@ nav a:hover:after{
 }
 
 #section4 > div{
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
     justify-self: center;
 }
 
@@ -659,8 +660,8 @@ footer a:hover{
 
     #section4{
         grid-template-columns:auto auto;
-        grid-template-rows:auto auto auto auto auto auto auto auto;
-        height: 1500px;
+        grid-template-rows: repeat(8, 1fr);
+        height: auto;
         width: 100%;
         padding: 4rem 0 4rem;
         background-color: #ffffff;
@@ -818,9 +819,8 @@ footer a:hover{
     }
 
     #section4{
-        grid-template-columns:auto auto;
-        grid-template-rows:auto auto auto auto auto auto auto auto;
-        height: 1500px;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
         width: 100%;
         padding: 4rem 0 4rem;
         background-color: #ffffff;
