@@ -374,7 +374,7 @@ nav a:hover:after{
     grid-template-rows:auto auto auto;
     grid-gap: 3rem;
     margin: 2rem auto;
-    height: 800px;
+    height: auto;
     width: 90%;
     padding: 4rem 0 4rem 0;
     background-color: #ffffff;
@@ -383,7 +383,6 @@ nav a:hover:after{
 #section6 > div{
     height: 180px;
     width: 180px;
-    background-color: gray;
     justify-self: center;
 }
 
@@ -492,7 +491,7 @@ footer a:hover{
 #copyright > p{
     text-align: center;
     color: #f0f0f0;
-    font-size: 1.4rem;
+    font-size: 1.4rem; 
     font-family: "HindLight";
 }
 
