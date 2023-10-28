@@ -227,13 +227,11 @@ nav a:hover:after{
 ul{
     list-style-type: none;
     margin-top: 2rem;
-    display: flex;
 }
 
 ul li{
     display: inline-block;
     margin-right: 2rem;
-    
 }
 
 
