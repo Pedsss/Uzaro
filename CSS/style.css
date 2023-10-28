@@ -330,7 +330,9 @@ ul li{
 #companyImg > #companyplaceholderImg{
     height: 480px;
     width: 400px;
-    background-color: white;
+    background-image: url(../images/Placeholder5.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #sectionContainer2{
