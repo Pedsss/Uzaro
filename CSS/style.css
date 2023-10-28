@@ -215,7 +215,6 @@ nav a:hover:after{
 #section-1 h1{
 
     color: #f7f7f7;
-    text-shadow: .1em .1em 0 hsl(200 50% 30%);
     font-size: 4.2rem;
 
 }
@@ -228,11 +227,13 @@ nav a:hover:after{
 ul{
     list-style-type: none;
     margin-top: 2rem;
+    display: flex;
 }
 
 ul li{
     display: inline-block;
     margin-right: 2rem;
+    
 }
 
 
@@ -241,7 +242,7 @@ ul li{
     width: 15rem;
     border-radius: 5px;
     display: inline-block;
-    padding: 1.5rem 1rem 1rem;
+    padding: 1.8rem 1rem 1rem;
     text-align: center;
     font-family: "Montserrat";
     font-size: 1.8rem;
@@ -307,8 +308,6 @@ ul li{
 }
 
 #introText h1{
-    text-shadow: .1em .1em 0 hsl(200 50% 30%);
-    font-weight: 900;
     font-size: 3.5rem;
     color: #f4f5f7;
     width: 100%;
