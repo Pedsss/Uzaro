@@ -366,25 +366,24 @@ nav a:hover:after{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: gray;
     justify-self: center;
 }
 
 #section6{
     display: grid;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows:auto auto auto;
-    margin: 4rem auto;
-    height: 800px;
-    width: 80%;
+    grid-gap: 2rem;
+    margin: 2rem auto;
+    height: auto;
+    width: 90%;
     padding: 4rem 0 4rem 0;
     background-color: #ffffff;
 }
 
 #section6 > div{
-    height: 200px;
-    width: 200px;
-    background-color: gray;
+    height: 180px;
+    width: 180px;
     justify-self: center;
 }
 
